@@ -3,14 +3,16 @@ scandir==1.6
 h5py==2.7.1
 Keras==2.1.2
 scikit-image
-dlib
-face_recognition
+#face_recognition
 youtube-dl
 moviepy
-numpy==1.14.0
-tqdm
 pydot
 graphviz
+opencv-python==3.4.0.12
+face-recognition==1.2.1
+numpy==1.14.0
+tqdm==4.19.5
+dlib==19.9.99
 
 
 # Required but installed using other means.
