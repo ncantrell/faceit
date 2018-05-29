@@ -113,8 +113,8 @@ class FaceIt:
             'outtmpl': os.path.join(FaceIt.VIDEO_PATH, video['name']),
             'merge_output_format' : 'mp4'
         }
-        with youtube_dl.YoutubeDL(options) as ydl:
-            x = ydl.download([video['url']])
+        #with youtube_dl.YoutubeDL(options) as ydl:
+            #x = ydl.download([video['url']])
 
     def _extract_frames(self, person, video):
         video_frames_dir = self._video_frames_path(video)
@@ -166,8 +166,8 @@ class FaceIt:
 
 
     def preprocess(self):
-        self.fetch()
-        self.extract_frames()
+        #self.fetch()
+        #self.extract_frames()
         self.extract_faces()
     
     def _symlink_faces_for_model(self, person, video):
