@@ -1,4 +1,3 @@
-!wget https://gist.github.com/facepainter/adfaabe25831a7c9300bafd1b886e1c8/raw/4290c424a16d8baf4e42e438704cd22c6efb6712/MODEL.npz
 '''
 Extract a known face from a video.
 Uses a combination of a deep learning CNN model to batch detect faces
