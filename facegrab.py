@@ -285,10 +285,13 @@ class FaceGrab(object):
 
     def __batch_builder(self, output_path, sequence, total_frames):
         '''Splits the fames in batches and keeps score'''
+        print('__batch_builder0')
         tqdm.monitor_interval = 0
         with tqdm(total=total_frames, unit='frame') as progress:
+            print('__batch_builder1')
             batch_count = 0
             for frame, frame_count in self.__get_fame(sequence, total_frames):
+                print('__batch_builder2')
                 progress.update(frame_count - progress.n)
                 progress.set_description(f'Total (extracted {self.__total_extracted})')
                 process_frame = self.__downsample(frame, self.__ps.scale)
